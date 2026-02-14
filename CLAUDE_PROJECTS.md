@@ -2,17 +2,45 @@
 
 You **won’t see** a Git repo inside Claude.ai. For each Claude project, you create **one folder** (Cursor project) and **one Git repo** on your machine (and on GitHub) using the scripts in this repo. Then you link that folder to the Claude project with ClaudeSync.
 
-## Audit (machine audit)
+## Checklist: every Claude project → Git (and optional GitHub)
 
-These folders under `C:\Users\kelly` were checked. Each already has a Git repo. If you have more Claude projects in the browser that don’t have a folder yet, run `.\new-project.ps1 -Name "ProjectName"` for each and add them below.
+All listed below have a **Cursor folder + Git repo** under `C:\Users\kelly`. To put one on GitHub: create repo at https://github.com/new (same name as folder), then in that folder run `git remote add origin https://github.com/kellylynnboyle/FOLDER_NAME.git` and `git push -u origin main`.
 
-| Claude project name | Cursor folder (path) | GitHub repo | Done? |
-|---------------------|---------------------|-------------|-------|
-| MRED546             | `C:\Users\kelly\MRED546-1` | https://github.com/kellylynnboyle/MRED546 | Yes |
-| MRED546 (alt)       | `C:\Users\kelly\MRED546`  | https://github.com/kellylynnboyle/MRED546 | Yes |
-| arroyoskyeview.com  | `C:\Users\kelly\arroyoskyeview.com` | (no remote yet) | Git only |
-| drjanduffy.com      | `C:\Users\kelly\drjanduffy.com`     | (no remote yet) | Git only |
-| (add more)          |                     |             |       |
+| Claude project | Folder | GitHub |
+|----------------|--------|--------|
+| MRED546 | `C:\Users\kelly\MRED546-1` | Yes – MRED546 |
+| MRED546 (alt) | `C:\Users\kelly\MRED546` | Yes – MRED546 |
+| arroyoskyeview.com | `C:\Users\kelly\arroyoskyeview.com` | (add when ready) |
+| drjanduffy.com | `C:\Users\kelly\drjanduffy.com` | (add when ready) |
+| Linqto | `C:\Users\kelly\Linqto` | create repo → push |
+| Chemistry Lesson 11 | `C:\Users\kelly\Chemistry-Lesson-11` | create repo → push |
+| Chemistry Lesson 8 and 9 | `C:\Users\kelly\Chemistry-Lesson-8-9` | create repo → push |
+| Santa Monica Airport Design | `C:\Users\kelly\Santa-Monica-Airport-Design` | create repo → push |
+| Chemistry Unit 2 | `C:\Users\kelly\Chemistry-Unit-2` | create repo → push |
+| Evergreen | `C:\Users\kelly\Evergreen` | create repo → push |
+| Mock Comp | `C:\Users\kelly\Mock-Comp` | create repo → push |
+| Community Design Assignment No. 1 | `C:\Users\kelly\Community-Design-Assignment-1` | create repo → push |
+| Del Webb North Ranch Website | `C:\Users\kelly\Del-Webb-North-Ranch-Website` | create repo → push |
+| Animation Island Season 2 | `C:\Users\kelly\Animation-Island-Season-2` | create repo → push |
+| Homestead West Las Vegas Website | `C:\Users\kelly\Homestead-West-Las-Vegas-Website` | create repo → push |
+| Hotel Project | `C:\Users\kelly\Hotel-Project` | create repo → push |
+| 717 Olympic | `C:\Users\kelly\717-Olympic` | create repo → push |
+| Offering Memorandum Review | `C:\Users\kelly\Offering-Memorandum-Review` | create repo → push |
+| Ark Funds | `C:\Users\kelly\Ark-Funds` | create repo → push |
+| Market Analysis Office Case | `C:\Users\kelly\Market-Analysis-Office-Case` | create repo → push |
+| Harvard | `C:\Users\kelly\Harvard` | create repo → push |
+| Site Plan Bubble Design | `C:\Users\kelly\Site-Plan-Bubble-Design` | create repo → push |
+| Blue Beam Dimensions | `C:\Users\kelly\Blue-Beam-Dimensions` | create repo → push |
+| Office And Parking | `C:\Users\kelly\Office-And-Parking` | create repo → push |
+| CMBS Project | `C:\Users\kelly\CMBS-Project` | create repo → push |
+| Rent To Own Analysis | `C:\Users\kelly\Rent-To-Own-Analysis` | create repo → push |
+| Laureate Development Vision | `C:\Users\kelly\Laureate-Development-Vision` | create repo → push |
+| Open House Website | `C:\Users\kelly\Open-House-Website` | create repo → push |
+| Northshore 3 Rivers | `C:\Users\kelly\Northshore-3-Rivers` | create repo → push |
+| Linqto News Update | `C:\Users\kelly\Linqto-News-Update` | create repo → push |
+| Attorney Search | `C:\Users\kelly\Attorney-Search` | create repo → push |
+| Facebook Case | `C:\Users\kelly\Facebook-Case` | create repo → push |
+| Linqto Form | `C:\Users\kelly\Linqto-Form` | create repo → push |
 
 **How to add a row:** For each project you have in Claude.ai, either:
 
