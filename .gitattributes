@@ -1,0 +1,27 @@
+# Normalize line endings (Windows: checkout CRLF, commit LF)
+* text=auto eol=lf
+
+# Explicit text files
+*.md text
+*.py text
+*.r text
+*.R text
+*.js text
+*.ts text
+*.json text
+*.yml text
+*.yaml text
+
+# Binary files (no diff/merge)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.xlsx binary
+*.xls binary
+
+# Diff settings
+*.md diff=markdown
