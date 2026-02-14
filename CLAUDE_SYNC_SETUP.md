@@ -17,19 +17,23 @@ Do this whenever you want Claude to have the latest version of your repo.
 ## Prerequisites
 
 - **Python 3.12+** and **pip**  
-  - If you don’t have them: install from [python.org](https://www.python.org/downloads/) and check “Add Python to PATH,” or use: `choco install python3 -y` (with Chocolatey).
+  - If you don’t have them: install from [python.org](https://www.python.org/downloads/) and check “Add Python to PATH,” or use: `winget install Python.Python.3.12` or `choco install python3 -y` (Chocolatey).
 - **Claude Pro or Team** (ClaudeSync uses your Claude.ai session).
 - This repo already has: `.claudeignore` (so secrets and junk aren’t synced to Claude.ai).
+
+**Note (Windows ARM):** If `pip install claudesync` fails (e.g. “Unsupported platform: win-arm64” for the `cryptography` package), use **WSL**, an **x64 Windows** machine, or install **Rust** and retry. Python 3.12 is installed on this machine; only ClaudeSync’s dependency has no ARM wheel.
 
 ## One-time setup
 
 ### 1. Install ClaudeSync
 
-In **PowerShell** or **Command Prompt**:
+In **PowerShell** or **Command Prompt** (from this folder or any):
 
 ```powershell
 pip install claudesync
 ```
+
+**Or run the guided script** (after ClaudeSync is installed): from this folder in PowerShell, run `.\setup-claudesync.ps1` to do login, organization set, project create, and first push step by step.
 
 Check it works:
 
