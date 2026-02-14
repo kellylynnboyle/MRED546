@@ -3,6 +3,8 @@
 **Rule: Every Claude project = one Cursor project = one Git repo.**  
 For every project you create in Claude, use one of the two flows below so you get one Cursor folder and one Git repo (and optionally one repo on GitHub) for that project.
 
+**To see which Claude projects have a Git repo:** open [CLAUDE_PROJECTS.md](CLAUDE_PROJECTS.md) and use the checklist there. To set up Git for several Claude projects at once, run `.\new-projects-batch.ps1 -Names "Name1","Name2"`.
+
 ---
 
 ## Option A: Brand‑new project (new folder + Git + GitHub)
