@@ -1,0 +1,13 @@
+﻿# Match .gitignore so Cursor indexing stays fast
+node_modules/
+__pycache__/
+.venv/
+venv/
+env/
+dist/
+build/
+.eggs/
+*.egg-info/
+.ipynb_checkpoints/
+.cache/
+.git/
