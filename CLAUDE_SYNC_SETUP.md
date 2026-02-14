@@ -2,6 +2,18 @@
 
 This project is set up so you can **work in Claude.ai** (browser), **sync files to this folder** with ClaudeSync, then **push to GitHub** from Cursor. No Claude API key is stored in the repo; you log in once with your browser session.
 
+## How Claude sees your Cursor and GitHub files
+
+**This folder = what Cursor has open = what’s on GitHub.** To make Claude.ai see the same files:
+
+1. **From Cursor:** Use the **“Sync to Claude”** task (see below) or run `claudesync push` in the terminal in this folder.
+2. **What happens:** ClaudeSync uploads this folder’s files (respecting `.claudeignore`) to your Claude.ai Project.
+3. **In Claude.ai:** Open that Project in the browser — Claude can now read and use those files (your Cursor/GitHub code).
+
+Do this whenever you want Claude to have the latest version of your repo.
+
+**One-click from Cursor:** `Ctrl+Shift+P` → **Run Task** → choose **Sync to Claude**. (Requires ClaudeSync one-time setup below.)
+
 ## Prerequisites
 
 - **Python 3.12+** and **pip**  
