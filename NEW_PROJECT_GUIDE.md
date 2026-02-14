@@ -1,8 +1,13 @@
 # New project from Claude → Cursor + GitHub
 
-When you **create a new project in Claude** (e.g. a new course or assignment), use this flow so you get a **new Cursor project** and a **new Git repo on GitHub** that stay in sync.
+**Rule: Every Claude project = one Cursor project = one Git repo.**  
+For every project you create in Claude, use one of the two flows below so you get one Cursor folder and one Git repo (and optionally one repo on GitHub) for that project.
 
-## One command (then a few clicks)
+---
+
+## Option A: Brand‑new project (new folder + Git + GitHub)
+
+When you **create a new project in Claude** (or want a new course/assignment), use this so you get a **new Cursor project** and a **new Git repo** in one go.
 
 From this repo’s folder (or from the folder that contains your projects), run in **PowerShell**:
 
@@ -36,3 +41,26 @@ Then you:
 7. **(Optional)** To let Claude see this project’s files: copy `setup-claudesync.ps1` and `CLAUDE_SYNC_SETUP.md` into the new folder (or run ClaudeSync setup there once).
 
 After that, the new project is a Cursor project and a GitHub repo. You don’t need to say anything in a Claude chat to “create” Cursor or Git — you run this script once per new project, then work in Claude and Cursor as usual.
+
+---
+
+## Option B: Existing folder for a Claude project (add Git + Cursor project)
+
+You already have a folder for a Claude project (open in Cursor) and want it to be its own Git repo:
+
+1. **Open that folder in Cursor** (File → Open Folder).
+2. In a terminal (or PowerShell) **from that folder**, run:
+   ```powershell
+   # If the script is in MRED546-1 (sibling or known path):
+   ..\MRED546-1\init-git-here.ps1
+   # Or from anywhere:
+   C:\Users\kelly\MRED546-1\init-git-here.ps1 -Path "C:\path\to\your\project"
+   ```
+3. The script adds `.gitignore`, `.gitattributes`, a **Sync to Claude** task, and runs `git init` + first commit.
+4. Create the repo on https://github.com/new, then:
+   ```powershell
+   git remote add origin https://github.com/kellylynnboyle/YourRepoName.git
+   git push -u origin main
+   ```
+
+**Summary:** For every Claude project → one Cursor project (folder) and one Git repo. New project: `new-project.ps1`. Existing folder: `init-git-here.ps1`.

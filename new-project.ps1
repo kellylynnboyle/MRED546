@@ -1,5 +1,5 @@
-# Create a new Cursor project + Git repo (ready for GitHub)
-# When you create a new project in Claude, run this script to get a matching Cursor folder and Git repo.
+# Create a new Cursor project + Git repo for a Claude project (ready for GitHub)
+# For every Claude project: run this to get one Cursor folder and one Git repo.
 #
 # Usage: .\new-project.ps1 -Name "MyProjectName"
 #        .\new-project.ps1 -Name "MRED546-2" -GitHubUser "kellylynnboyle"
